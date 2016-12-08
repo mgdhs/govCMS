@@ -9,6 +9,10 @@ docroot/core
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
 docroot/sites/*/private
+files-private
+
+# Ignore local settings.php
+docroot/sites/*/settings.local.php
 
 # Ignore contrib modules. These should be created during build process.
 docroot/modules/contrib

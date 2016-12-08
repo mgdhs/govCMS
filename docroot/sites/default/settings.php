@@ -749,7 +749,11 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+
+require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+// require DRUPAL_ROOT . "/sites/default/settings/trusted_host.settings.php";
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+$settings['install_profile'] = 'lightning';
