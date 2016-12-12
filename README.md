@@ -28,3 +28,16 @@ Note: You will need to ensure that the database 'drupal'(by default) exists and 
 5. Enjoy a shiny govCMS build on Drupal 8 by visiting http://govcms.dev(by default), or using drush.
 <pre><code>cd docroot</code></pre>
 <pre><code>drush @self uli</pre>
+
+
+## Updating
+When a new update comes out, for either drupal, or any of the dependencies (modules, libraries etc), the following steps can be run to update the codebase.
+
+1. Run
+```
+ composer clear-cache; composer update; blt setup:composer:install;
+```
+
+2. Get excited by how easy that was, unless you need to update to higher versions that are not currently supported in the composer.json file.
+If that is the case then you can find more information about [updating the version numbers here](https://getcomposer.org/doc/articles/versions.md)
+
