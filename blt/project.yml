@@ -1,7 +1,7 @@
 project:
   machine_name: govcms
   prefix: govcms
-  human_name: 'govCMS'
+  human_name: govCMS
   profile:
     name: lightning
   local:
