@@ -28,6 +28,7 @@ projects[defaultcontent][patch][] = "https://drupal.org/files/1757782-cannot-imp
 projects[defaultcontent][patch][] = "https://drupal.org/files/1896232-defaultcontent-nid.patch"
 projects[defaultcontent][version] = "2.x-dev"
 projects[diff][version] = "3.2"
+projects[disablepwstrength][version] = "1.1"
 projects[draggableviews][version] = "2.1"
 projects[ds][version] = "2.8"
 projects[elements][version] = "1.4"

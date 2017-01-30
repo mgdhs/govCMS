@@ -70,3 +70,10 @@ function govcms_account_security_uninstall() {
   variable_del('govcms_account_security_user_profile_page_code_anonymous_visit');
 
 }
+
+/**
+ * Disables the miseading password strength indicator
+ */
+function govcms_account_security_update_7001() {
+  module_enable(array('disablepwstrength'), FALSE);
+}
